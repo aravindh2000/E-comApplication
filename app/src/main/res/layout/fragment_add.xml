@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.AddFragment">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FEDBD0">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="𝕦𝕡𝕝𝕠𝕒𝕕"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="25sp"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <Button
+        android:background="@drawable/btn_shape"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70dp"
+        android:id="@+id/choose_button"
+        android:text="choose"/>
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/product_id"
+        android:hint="price ₹ with user name"
+
+        android:layout_toRightOf="@+id/choose_button"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70dp"
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_marginLeft="20dp"
+        app:cardCornerRadius="15dp"
+
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/product_id"
+        android:layout_width="match_parent"
+        android:id="@+id/cdv"
+        android:layout_height="350dp">
+        <ImageView
+            android:id="@+id/image_upload"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/choose_button"
+            />
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="upload"
+        android:background="@drawable/btn_shape"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_toRightOf="@+id/pid"
+        android:id="@+id/upload_button"
+     android:layout_marginBottom="20dp"
+     android:layout_below="@id/cdv"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="30dp"/>
+
+   <EditText
+       android:layout_width="150dp"
+       android:layout_height="50dp"
+       android:id="@+id/pid"
+       android:layout_marginTop="100dp"
+
+       android:layout_below="@+id/cdv"
+
+       android:layout_marginLeft="40dp"
+       android:hint="Enter Product Id"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        android:visibility="invisible"
+
+        style="?android:attr/progressBarStyle"
+        android:layout_below="@+id/cdv"
+     android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

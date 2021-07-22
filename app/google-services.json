@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "573450351501",
+    "project_id": "cartaicteproject",
+    "storage_bucket": "cartaicteproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:573450351501:android:04afcee5d02ff0d36903c4",
+        "android_client_info": {
+          "package_name": "com.example.cartaicteproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "573450351501-p3281v60bmt91vrvhp7fdduqjr5vou5h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgJ0jTog6TM2XE0XLW7IJW4Z04AVKgN9U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "573450351501-p3281v60bmt91vrvhp7fdduqjr5vou5h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

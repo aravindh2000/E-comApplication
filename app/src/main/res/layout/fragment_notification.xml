@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.NotificationFragment">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/apbar"
+        android:layout_height="50dp"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="𝕠𝕣𝕕𝕖𝕣"
+            android:layout_marginLeft="30dp"
+            android:textColor="@android:color/black"
+            android:textSize="40sp"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/appbar"
+
+        android:hint="To"
+        android:id="@+id/to"
+        android:gravity="center"
+        android:background="@drawable/mail_design"
+        android:layout_marginTop="100dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/to"
+        android:id="@+id/sub"
+        android:hint="subject"
+
+        android:gravity="center"
+        android:background="@drawable/mail_design"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/msg"
+        android:hint="Order Details"
+        android:gravity="center"
+        android:background="@drawable/mail_design"
+        android:layout_below="@+id/sub"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"/>
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/send"
+        android:src="@drawable/mail_icon"
+        android:layout_below="@+id/msg"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="280dp"/>
+
+
+
+</RelativeLayout>

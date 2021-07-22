@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEDBD0"
+    >
+    <EditText
+        android:maxLines="1"
+        android:layout_width="350dp"
+        android:id="@+id/name"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_design"
+        android:hint="Name"
+        android:gravity="center"
+        android:drawableRight="@drawable/login_pro"
+        android:inputType="text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        />
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_design"
+        android:hint="Email"
+        android:gravity="center"
+        android:id="@+id/email"
+        android:layout_below="@id/name"
+        android:inputType="textEmailAddress"
+        android:drawableRight="@drawable/ic_email_black_24dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_design"
+        android:hint="Password"
+        android:inputType="numberPassword"
+        android:gravity="center"
+        android:layout_below="@id/email"
+        android:maxLength="10"
+        android:drawableRight="@drawable/key"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+    <Button
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Register"
+        android:textStyle="bold"
+        android:textSize="19dp"
+
+
+        android:textColor="@android:color/holo_red_dark"
+        android:background="@drawable/register_design"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:id="@+id/reg"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/loginbtn"
+        android:text="Already have an account..login"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/reg"/>
+
+
+</RelativeLayout>
